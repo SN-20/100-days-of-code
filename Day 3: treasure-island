@@ -1,0 +1,50 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island of Narutoverse.")
+print("Your mission is to find the treasure.") 
+
+print("You are walking through the jungle. Suddenly you see the path is dividing into two. Which path will you choose? left👈 or right👉?")
+path = input()
+
+if path == 'left':
+  print("You've come across a cave. You entered the cave and reached the other end where there is a river. What will you do? swim🏊(Type 'swim') or walk🚶(Type 'walk')")
+  at_river = input()
+
+  if at_river == "walk":
+    print("You reach the other side of river safely. There is house in front of you with 3 doors, red🔴, yellow🟡 and blue🔵. Which one would you select?")
+    color = input()
+
+    if color == "red":
+      print("You entered the room without knocking. Hence you are killed by Itachi Uchiha.🥹🥹")
+    elif color == 'yellow':
+      print("There is Treasure Box. Since you reached the treasure you get a bowl of ramen from Naruto Uzumaki.😊😊")
+    elif color == 'blue':
+      print("You are killed by Ten Tails.😭😭")
+    else:
+      print("Since you have no brains like Sakura. Its better to kill you.😂😂")
+  
+  else:
+    print("Since you decided to swim instead of walking on water. Kakashi sensei is disappointed. Hence you end your hunt here.😞😞")
+
+else:
+  print("Since you think that betraying your comrades is RIGHT. You are killed by Obito Uchiha.😡😡")
