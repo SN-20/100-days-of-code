@@ -1,0 +1,52 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+
+import random
+num = int(input("What do you choose? 0 for Rock, 1 for Paper, 2 for Scissors\n"))
+
+if num == 0:
+  player = rock
+elif num == 1:
+  player = paper
+else:
+  player = scissors
+
+print("You chose:\n"+player)
+
+
+choices = [rock, paper, scissors]
+
+computer = random.choice(choices)
+print("Computer chose:\n"+computer)
+
+if (player == rock and computer == scissors) or (player == paper and computer == rock) or (player == scissors and computer == paper):
+  print("You Win")
+elif (computer == rock and player == scissors) or (computer == paper and player == rock) or (computer == scissors and player == paper):
+  print("You Loose")
+else:
+  print("It's Draw")
